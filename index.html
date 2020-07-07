@@ -3,12 +3,13 @@
 <script type="text/javascript">
 function randombg(){
   var random= Math.floor(Math.random() * 6) + 0;
-  var bigSize = ["src='/images/bg (1).png'",
-                 "src='/images/bg (1).png'",
-                 "src='/images/bg (1).png'",
-                 "src='/images/bg (1).png'",
-                 "src='/images/bg (1).png'",
-                 "src='/images/bg (1).png'"];
+  var bigSize = ["url('https://prktfnt.github.io/images/bg%20(1).png')",
+                "url('https://prktfnt.github.io/images/bg%20(1).png')",
+                "url('https://prktfnt.github.io/images/bg%20(1).png')",
+                "url('https://prktfnt.github.io/images/bg%20(1).png')",
+                "url('https://prktfnt.github.io/images/bg%20(1).png')",
+                "url('https://prktfnt.github.io/images/bg%20(1).png')",
+                 ];
   document.getElementById("random").style.backgroundImage=bigSize[random];
 }
 </script>
@@ -17,11 +18,10 @@ function randombg(){
 #random{
   /* BOX MODEL */
   width: 100%;
-  height: 450px;
-  border: 1px solid black;
+  height: 100%;
 
   /* ENHANCEMENT */
-  background-image: src="/images/bg (1).png";
+  background-image: url('https://prktfnt.github.io/images/bg%20(1).png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,6 +31,6 @@ function randombg(){
 <body onload="randombg()">
 	<div id="random" ></div>
 </body>
-<button onclick="randombg()">reload simulation</button>
+<!--<button onclick="randombg()">reload simulation</button>-->
 
 </html>
